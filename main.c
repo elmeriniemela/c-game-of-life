@@ -30,6 +30,11 @@ int main(int argc, char *argv[]) {
     srand((unsigned)time(NULL));
 
     GameArea *a = createGameArea(50,20);
+    if (a == NULL) {
+        printf("Allocating memory failed\n");
+        return -1;
+    }
+
     initGameArea(a, 150);
 
     // loop iterations, cancel with ctrl-c

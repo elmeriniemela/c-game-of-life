@@ -35,6 +35,10 @@ GameArea *createGameArea(unsigned int x_size, unsigned int y_size) {
 
 GameArea *copyGameArea(const GameArea *game) {
     GameArea *new = createGameArea(game->x_size, game->y_size);
+    if (new == NULL) {
+        printf("Allocating memory failed\n");
+        exit(-1);
+    }
     for (int y = 0; y < new->y_size; y++) {
         for (int x = 0; x < new->x_size; x++) {
             new->cells[y][x] = game->cells[y][x];
