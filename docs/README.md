@@ -1,6 +1,6 @@
 # Game of life, implemented in C
 
-![alt text](game-of-life.png)
+![alt text](https://raw.githubusercontent.com/thecodebasesite/c-game-of-life/master/docs/game-of-life.png)
 
 Usage:
 
